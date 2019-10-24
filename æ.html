@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday. Shrek will come for you tomorrow.";
+    break;
+  case 1:
+    day = "Monday. Shrek will arrive today, and if not, on next Monday.";
+    break;
+  case 2:
+    day = "Tuesday. You just missed him.";
+    break;
+  case 3:
+    day = "Wednesday. Shrek will arrive on Monday.";
+    break;
+  case 4:
+    day = "Thursday. Shrek will arrive on Monday.";
+    break;
+  case 5:
+    day = "Friday. Shrek will arrive on Monday.";
+    break;
+  case  6:
+    day = "Saturday. Shrek will arrive on Monday.";
+}
+document.getElementById("demo").innerHTML = "Today is " + day;
+</script>
+
+<img src="InkShrek.jpg">
+
+</body>
+</html>
